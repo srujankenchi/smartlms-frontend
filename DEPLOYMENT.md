@@ -16,7 +16,7 @@ This frontend is a React + Vite application designed for fast, seamless deployme
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
 6. Expand **Environment Variables** and add:
-   - `VITE_API_BASE_URL`: `https://<your-render-backend-name>.onrender.com/api`
+   - `VITE_API_BASE_URL`: `https://smartlms-backend-lb7z.onrender.com/api`
 7. Click **Deploy**!
 
 ---

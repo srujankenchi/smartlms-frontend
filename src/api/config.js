@@ -3,15 +3,15 @@
  * Supports local development, custom env vars, and production deployments on Vercel / Render.
  */
 
-// Base API endpoint URL (e.g. "https://smartlms-backend.onrender.com/api" or "http://localhost:8008/api")
+// Base API endpoint URL pointing to live Render deployment
 export const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || 'http://localhost:8008/api';
+  import.meta.env.VITE_API_BASE_URL || 'https://smartlms-backend-lb7z.onrender.com/api';
 
 // Base backend host without the '/api' suffix
 export const BACKEND_BASE_URL =
   import.meta.env.VITE_BACKEND_URL ||
   API_BASE_URL.replace(/\/api\/?$/, '') ||
-  'http://localhost:8008';
+  'https://smartlms-backend-lb7z.onrender.com';
 
 /**
  * Derives the appropriate WebSocket URL.
